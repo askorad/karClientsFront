@@ -1,0 +1,26 @@
+{
+    "name": "kara-clients",
+    "version": "1.0.0",
+    "description": "Interface clients - KARA",
+    "author": "Vincent DAVID - ASKORAD",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "generate": "nuxt generate",
+        "start": "nuxt start"
+    },
+    "dependencies": {
+        "@nuxtjs/axios": "^5.12.2",
+        "@nuxtjs/style-resources": "^1.0.0",
+        "animate.css": "^4.1.1",
+        "bootstrap": "^4.5.3",
+        "bootstrap-vue": "^2.19.0",
+        "node-sass": "^5.0.0",
+        "npm-check-updates": "^10.0.0",
+        "nuxt": "^2.14.10",
+        "sass-loader": "^10.1.0",
+        "vuex-persist": "^3.1.3"
+    },
+    "devDependencies": {}
+}
