@@ -1,5 +1,8 @@
 export default {
 
+    ssr: false,
+    target: 'server',
+
     components: true,
 
     //--------------------------------------------------------------------------
