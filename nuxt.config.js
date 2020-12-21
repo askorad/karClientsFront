@@ -66,6 +66,6 @@ export default {
 
         //PRODUCTION
         //------------------------------------------------------------------------
-        baseURL: 'https://tdb.kara-expertise.com/api/',
+        baseURL: 'https://tdb.kara-audit.com/api/',
     },
 }
