@@ -59,10 +59,10 @@ export default {
     axios: {
         //DEVELOPMENT
         //------------------------------------------------------------------------
-        baseURL: 'http://tools.kara-expertise.local/api/',
+        //baseURL: 'http://tools.kara-expertise.local/api/',
 
         //PRODUCTION
         //------------------------------------------------------------------------
-        //baseURL: 'https://links.askorad.cloud/api/',
+        baseURL: 'https://tdb.kara-expertise.com/api/',
     },
 }
