@@ -1,2 +1,59 @@
+// Body
+$body-bg: #F5F2F2;
+
+// Typography
+$font-family-sans-serif: "Oxygen", sans-serif;
+
+// Colors
+$blue: #0086b3;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #be3713;
+$orange: #e5a117;
+$yellow: #ffed4a;
+$green: #98BE13;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$brown: #403933;
+$brown-medium: #4d443d;
+$brown-light: #594f47;
+$vmenu-dark: $brown;
+$vmenu-medium: $brown-medium;
+$vmenu-light: $brown-light;
+$vmenu-text-light: #ccc5c2;
+$vmenu-text-dark: #99887a;
+
+$primary: $brown-medium;
+$secondary: $brown-medium;
+$warning: $orange;
+$danger: $red;
+$success: $green;
+
+$font-size-base: 0.85rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * .875 !default;
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5;
+
+$h1-font-size: $font-size-base * 2 !default;
+$h2-font-size: $font-size-base * 1.75 !default;
+$h3-font-size: $font-size-base * 1.5 !default;
+$h4-font-size: $font-size-base * 1.25 !default;
+$h5-font-size: $font-size-base * 1.1 !default;
+$h6-font-size: $font-size-base !default;
+
+$link-color: $secondary !default;
+$link-decoration: none !default;
+$link-hover-color: $primary !default;
+$link-hover-decoration: none !default;
+
 // All of bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
