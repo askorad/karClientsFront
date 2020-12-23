@@ -1,6 +1,18 @@
 <template>
     <div>
-        <p class="chat-title">{{title}}</p>
+        <div class="row">
+            <div class="col-10">
+                <p class="chat-title">{{messageTitle}}</p>
+            </div>
+            <div class="col-2 text-right">
+                <div v-if="clientMessage">
+                    <a href="#" @click="deleteMessage"
+                       title="Supprimer ce message">
+                        <font-awesome-icon :icon="['fal','trash-alt']"></font-awesome-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
         <b-form-input
                 :class="inputClass"
                 v-model="form.message"
@@ -45,10 +57,19 @@
                 }
             },
 
+            async deleteMessage() {
+                try {
+                    await this.$axios.delete('/pendingPointComments/' + this.comment.id)
+                    this.refreshComments()
+                } catch (error) {
+                    console.log(error)
+                }
+            },
+
             refreshComments() {
                 this.editing = false
                 this.unFocus()
-                this.$parent.getComments()
+                this.$parent.refresh()
             },
 
             unFocus() {
@@ -60,11 +81,17 @@
             inputClass() {
                 return this.editing
                     ? 'p-1'
-                    : 'border-0 p-1'
+                    : 'border-0 p-1 bg-light'
             },
 
-            title() {
-                return this.comment.accounting_firm_user.name + ', ' + this.comment.created_at
+            messageTitle() {
+                return this.clientMessage
+                    ? 'Vous, ' + this.comment.created_at
+                    : this.comment.accounting_firm_user.name + ', ' + this.comment.created_at
+            },
+
+            clientMessage() {
+                return this.comment.accounting_firm_user === null
             }
         }
 

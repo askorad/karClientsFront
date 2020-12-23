@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div v-if="showPassword">
+        <div v-if="showPassword" class="mt-5">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 offset-4">
                     <b-input v-model="password"></b-input>
                 </div>
             </div>
@@ -45,7 +45,7 @@
             }),
 
             showPassword() {
-                return this.password !== 'Kara'
+                return this.password !== 'Kara2021'
             }
         }
 

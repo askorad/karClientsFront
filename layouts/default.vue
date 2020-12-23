@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-navbar toggleable="lg" class="shadow">
+        <b-navbar toggleable="lg" class="shadow bg-white">
             <b-navbar-brand>
                 <nuxt-link :to="{name:'index'}">
                     <img src="~/assets/img/logo-kara.png" style="height: 50px" alt="KARA">

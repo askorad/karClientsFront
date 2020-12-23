@@ -25,16 +25,12 @@
                 this.form.pending_point_id = this.point.id
                 try {
                     await this.$axios.post('/pendingPointComments', this.form)
-                    this.refreshComments()
+                    await this.$parent.refresh()
+                    this.form.message = ''
                 } catch (error) {
                     console.log(error)
                 }
             },
-
-            refreshComments() {
-                this.form.message = ''
-                this.$parent.getComments()
-            }
         }
     }
 </script>
