@@ -24,11 +24,11 @@
         head: {
             title: 'Points en suspens'
         },
-/*
+
         created() {
             this.$store.dispatch('userData/GET_PENDING_POINTS')
         },
-*/
+
         computed: {
             ...mapState({
                 pendingPoints: state => state.userData.pendingPoints,
