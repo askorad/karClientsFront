@@ -42,7 +42,7 @@
 
         computed: {
             files() {
-                return this.point.files
+                return this.point.files.data
             },
             noFile() {
                 return this.files.length === 0
